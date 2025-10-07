@@ -1,5 +1,4 @@
 # Diamond Price Prediction
-
 ## Project Overview
 Diamonds are among the most valued gemstones, prized for their rarity, brilliance, and investment potential. Predicting diamond prices accurately is a complex problem due to multiple influencing factors such as **cut**, **color**, **clarity**, **carat weight**, and various dimensional properties.
 
