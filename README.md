@@ -1,8 +1,8 @@
-# 💎 Diamond Price Prediction
+# Diamond Price Prediction
  
 --
 
-## 🧭 Project Overview
+## Project Overview
 Diamonds are among the most valued gemstones, prized for their rarity, brilliance, and investment potential. Predicting diamond prices accurately is a complex problem due to multiple influencing factors such as **cut**, **color**, **clarity**, **carat weight**, and various dimensional properties.
 
 In this project, a **machine learning–based regression model** is developed to predict diamond prices based on their characteristics. The project includes:
@@ -15,7 +15,7 @@ The notebook implements **k-fold cross-validation** for performance evaluation a
 
 ---
 
-## 📂 Dataset Information
+## Dataset Information
 
 **Dataset:** `train.csv`  
 **Number of Samples:** 193,573  
@@ -37,7 +37,7 @@ The notebook implements **k-fold cross-validation** for performance evaluation a
 
 ---
 
-## ⚙️ Technologies and Libraries Used
+## Technologies and Libraries Used
 
 | Category | Libraries |
 |-----------|------------|
@@ -49,7 +49,7 @@ The notebook implements **k-fold cross-validation** for performance evaluation a
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 - Checked for **null values** and **duplicates** (none found)
 - Visualized **categorical feature distributions** (`cut`, `color`, `clarity`)
@@ -59,7 +59,7 @@ The notebook implements **k-fold cross-validation** for performance evaluation a
 
 ---
 
-## 🧠 Feature Engineering
+## Feature Engineering
 
 ### **1. Ordinal Encoding**
 Categorical features (`cut`, `color`, `clarity`) were encoded numerically to enable model processing.
@@ -76,7 +76,7 @@ Variance-based selection showed better model performance and was used for final 
 
 ---
 
-## 🧩 Model Training and Evaluation
+## Model Training and Evaluation
 
 ### **Train-Test Split**
 Data was divided using `train_test_split` with:
@@ -89,7 +89,7 @@ K-Fold Cross-Validation was applied with:
 
 ---
 
-## 🧮 Machine Learning Models Implemented
+## Machine Learning Models Implemented
 
 | Model | Description | Optimal Hyperparameters | Accuracy (R²) |
 |--------|--------------|-------------------------|----------------|
@@ -105,18 +105,17 @@ K-Fold Cross-Validation was applied with:
 
 ---
 
-## 📉 Dimensionality Reduction Comparison
+## Dimensionality Reduction Comparison
 
 | Method | Description | Accuracy (Linear Regression) |
 |---------|--------------|-----------------------------|
 | **PCA (Principal Component Analysis)** | Projects data into 6 principal components | 0.85 |
 | **Variance-Based Selection** | Keeps features with correlation > 0.1 | **0.91** |
-
-➡️ **Chosen method:** Variance-based feature selection (better model generalization)
+ **Chosen method:** Variance-based feature selection (better model generalization)
 
 ---
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 Model performance was assessed using:
 - **R² Score (Coefficient of Determination)**
@@ -125,7 +124,7 @@ Model performance was assessed using:
 
 ---
 
-## 🏁 Results Summary
+##  Results Summary
 
 | Model | R² Score | Remarks |
 |--------|-----------|----------|
@@ -136,7 +135,7 @@ Model performance was assessed using:
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 - Implement **hyperparameter tuning** using `GridSearchCV`
 - Introduce **XGBoost** and **LightGBM** for improved accuracy
